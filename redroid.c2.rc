@@ -1,0 +1,6 @@
+on init
+    setprop debug.stagefright.c2inputsurface -1
+    setprop debug.stagefright.ccodec 4
+
+on init && property:ro.boot.use_dmabufheaps=*
+    setprop debug.c2.use_dmabufheaps ${ro.boot.use_dmabufheaps}
