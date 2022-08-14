@@ -1,4 +1,4 @@
-on init
+on init && property:ro.boot.use_redroid_c2=1
     exec -- /vendor/bin/redroid.c2.sh
 
 on init && property:ro.boot.use_dmabufheaps=*
